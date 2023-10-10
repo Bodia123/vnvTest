@@ -1,0 +1,50 @@
+.container {
+  display: block;
+  width: 350px;
+  min-height: 80px;
+  padding-top: 10px;
+  margin: 20px auto;
+
+  border-radius: 20px;
+  background-color: inherit;
+  border: 2px solid white;
+}
+
+.TitleBox {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  color: white;
+}
+.text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+.icon {
+  display: block;
+  width: fit-content;
+  margin-left: 30px;
+  padding: 5px;
+
+  border-radius: 50%;
+  background-color: red;
+  animation: var(--scaleAniimation);
+}
+.icon > svg {
+  display: block;
+  margin: auto;
+}
+.TitleBox > a {
+  margin-right: 20px;
+  padding: 5px;
+
+  border-radius: 20px;
+  border: 1px solid red;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 3px 5px 14px #ffffff;
+  cursor: pointer;
+  animation: var(--scaleAniimation);
+}

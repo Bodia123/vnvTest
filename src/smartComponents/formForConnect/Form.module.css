@@ -1,0 +1,55 @@
+.title {
+  text-align: center;
+}
+.form {
+  text-align: center;
+}
+.selectConnectTypeBox {
+}
+.input {
+  width: calc(100% - 33%);
+  height: 30px;
+  padding-left: 30px;
+  margin: 10px 0;
+
+  border: 1px solid rgba(83, 82, 82, 0.597);
+  border-radius: 20px;
+
+  background-color: inherit;
+  color: white;
+}
+
+.textArea {
+  width: calc(100% - 33%);
+  height: 80px;
+  padding: 10px 15px 10px 30px;
+
+  border-radius: 20px;
+  background-color: inherit;
+  resize: none;
+  color: white;
+}
+.textArea::placeholder,
+.input::placeholder {
+  text-align: center;
+  padding-left: 0;
+}
+.submitBox > button:disabled {
+  background-color: gray;
+  pointer-events: none;
+}
+
+.submitBox > button {
+  margin-top: 10px;
+  padding: 15px;
+
+  border-radius: 20px;
+  border: 1px solid red;
+  background-color: inherit;
+  color: white;
+}
+
+.submitBox > button:active {
+  color: black;
+  background-color: white;
+}

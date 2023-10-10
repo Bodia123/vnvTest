@@ -1,0 +1,6 @@
+.titleContainer {
+  display: block;
+  width: 100vw;
+  text-align: center;
+  color: var(--textMainColor);
+}

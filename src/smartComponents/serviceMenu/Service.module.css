@@ -1,0 +1,49 @@
+.serviceListContainer {
+  padding-right: 10px;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  background-color: var(--bgElementCOlor);
+}
+
+.serviceList {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+
+  margin-top: 15px;
+  padding: 10px;
+}
+.selectedServiceItem,
+.serviceItem {
+  display: block;
+
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid white;
+
+  color: white;
+  cursor: pointer;
+
+  transition: all 0.3s ease-out;
+}
+.selectedServiceItem {
+  background-color: white;
+  color: black;
+
+  transition: all 0.3s ease-out;
+}
+.serviceList > li:not(:last-child) {
+  margin-right: 5px;
+}
+
+.serviceText {
+  display: block;
+  white-space: nowrap;
+}
+@media (min-width: 1024px) {
+  .serviceList {
+    justify-content: center;
+  }
+}

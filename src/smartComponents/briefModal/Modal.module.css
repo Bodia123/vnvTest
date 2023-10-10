@@ -1,0 +1,18 @@
+.mainBriefModalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.windowContainer {
+  pointer-events: none;
+
+  position: fixed;
+
+  margin: 0, 20px;
+
+  top: 10%;
+  height: 85%;
+
+  background-color: grey;
+}

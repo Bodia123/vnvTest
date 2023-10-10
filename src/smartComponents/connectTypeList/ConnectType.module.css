@@ -1,0 +1,23 @@
+.selectConnectTypeBox {
+}
+.title {
+  text-align: center;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+.item {
+  display: block;
+}
+.item:active,
+.item:hover,
+.item:focus {
+  color: hsla(0, 100%, 50%, 0.5);
+}
+.item:not(:last-child) {
+  margin-right: 20px;
+}

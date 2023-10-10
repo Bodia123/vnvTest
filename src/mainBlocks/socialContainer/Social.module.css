@@ -1,0 +1,13 @@
+.title {
+  margin-top: 20px;
+
+  text-align: center;
+  font-size: 18px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+}

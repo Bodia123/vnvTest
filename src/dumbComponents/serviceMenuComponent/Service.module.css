@@ -1,0 +1,100 @@
+.serviceContainer {
+  padding-bottom: 10px;
+  animation: var(--bounceItemAnimation);
+
+  /* transform: translateY(250px); */
+  border: 2px solid rgba(222, 219, 219, 0.67);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  transition: all 0.3s ease-out;
+}
+
+.serviceTitle {
+  margin-top: 15px;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--textMainColor);
+}
+.serviceDescription {
+  margin-top: 15px;
+}
+.serviceBecause {
+  margin-top: 15px;
+
+  text-align: center;
+  font-weight: 600;
+}
+/* service list */
+
+.serviceList {
+  margin: 0 auto;
+  width: 300px;
+  max-width: 300px;
+  margin-top: 15px;
+}
+.serviceItem {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: max-content;
+  max-width: 100%;
+}
+
+.serviceText {
+  font-weight: 200;
+}
+
+/* buttonController */
+.buttonControllerBox {
+}
+.buttonControllerBox > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+
+  margin: 20px auto 0;
+  background-color: var(--mainButtonsBcColor);
+}
+
+.buttonWantText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: calc(100% - 50px);
+
+  font-size: 24px;
+  color: white;
+  animation: var(--scaleAniimation);
+}
+.buttonWantText svg {
+  display: block;
+  margin: auto;
+}
+.buttonWantText:hover span {
+  transform: translateX(20px);
+  transition: all 0.5s linear;
+}
+/* poster */
+.posterImage {
+  display: block;
+  margin: 20px auto 0;
+  width: calc(100% - 20px);
+}
+@media (min-width: 1024px) {
+  .posterImage {
+    height: 400px;
+  }
+}

@@ -1,0 +1,23 @@
+.faqContainer {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 30px;
+
+  user-select: none;
+  transition: all 0.3s linear;
+}
+
+.questionElement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.questionText {
+  margin-bottom: 15px;
+}
+
+/* answer */
+.answerElement {
+  transition: all 0.3s linear;
+}
