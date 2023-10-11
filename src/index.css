@@ -1,14 +1,3 @@
-@keyframes myAnim {
-  0% {
-    background-position: left bottom;
-    background-size: 100%;
-  }
-
-  100% {
-    background-position: left bottom;
-    background-size: 150%;
-  }
-}
 @keyframes bounceItemAnim {
   0% {
     animation-timing-function: ease-out;
@@ -49,6 +38,7 @@
     transform: scale(1);
   }
 }
+
 :root {
   --main-bg-color: #07080f;
   --bgElementCOlor: black;
@@ -84,3 +74,4 @@ body {
   font-family: cursive;
   /* overflow: hidden; */
 }
+/*  */

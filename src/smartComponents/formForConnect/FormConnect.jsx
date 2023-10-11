@@ -16,7 +16,7 @@ const InputBox = ({ type, inputType, placeholderInput = "" }) => {
     </div>
   );
 };
-function FormConnect({ type, cleanType }) {
+function FormConnect({ type, cleanType, briefMessage, setMessage }) {
   const submitForm = async (event) => {
     event.preventDefault();
     const value = {
@@ -24,9 +24,13 @@ function FormConnect({ type, cleanType }) {
       addresInfo: event.target[1].value,
       comment: event.target.comment.value,
     };
-    const message = `<b>   Заявка з сайту</b>\n <b>Ім'я клієнта: ${value.name}</b>\n <b>Тип з'єднання: ${value.addresInfo}</b>\n <b>Коментарій: ${value.comment}</b>\n`;
+    let message = `<b>   Заявка з сайту</b>\n <b>Ім'я клієнта: ${value.name}</b>\n <b>Тип з'єднання: ${value.addresInfo}</b>\n <b>Коментарій: ${value.comment}</b>\n`;
+    if (briefMessage) {
+      message += briefMessage;
+    }
     await sendTelegram(message);
-    cleanType(null);
+    setMessage(null);
+    cleanType("number");
     event.target.reset();
   };
   return (
@@ -104,5 +108,6 @@ InputBox.propTypes = {
   type: PropTypes.string.isRequired,
   inputType: PropTypes.string.isRequired,
   placeholderInput: PropTypes.string.isRequired,
+  setMessage: PropTypes.func,
 };
 export default FormConnect;

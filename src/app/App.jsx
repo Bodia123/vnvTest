@@ -15,16 +15,18 @@ import BriefModal from "../smartComponents/briefModal/BriefModal";
 function App() {
   const [messageWindowOpen, setMessageWindowOpen] = useState(false);
   const [briefModal, setBriefModal] = useState(false);
-
+  const [briefMessage, setBriefMessage] = useState(null);
   return (
     <div className={css.mainContainer}>
       <Header />
       <Projects />
       <WhyUs />
       <Service />
-      <Connect />
+      <Connect briefMessage={briefMessage} setMessage={setBriefMessage} />
       <Brief changeBriefModal={setBriefModal} />
-      {briefModal && <BriefModal closeWindow={setBriefModal} />}
+      {briefModal && (
+        <BriefModal closeWindow={setBriefModal} setMessage={setBriefMessage} />
+      )}
 
       <Faq />
       <SocialBlock />

@@ -1,3 +1,23 @@
 .briefContainer {
   position: relative;
 }
+.title {
+  text-align: center;
+  margin: 10px 0;
+}
+.text {
+  margin-left: 10px;
+}
+.text > span {
+  /* color: blueviolet; */
+}
+.button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 20px;
+
+  border: 1px solid white;
+  color: inherit;
+  background-color: inherit;
+}

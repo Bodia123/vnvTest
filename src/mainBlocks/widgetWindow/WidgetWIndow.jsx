@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { BiSolidDownArrow } from "react-icons/bi";
 
-import css from "./WIndow.module.css";
+import css from "./Window.module.css";
 import { useEffect, useRef } from "react";
 import SocialLinkList from "../../dumbComponents/socialLinkList/SocialLinkList";
 

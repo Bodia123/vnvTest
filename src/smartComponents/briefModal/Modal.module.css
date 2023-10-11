@@ -1,18 +1,103 @@
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateY(-65px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateY(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+}
 .mainBriefModalContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 80vw;
+  z-index: 100;
 }
 .windowContainer {
-  pointer-events: none;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  display: flex;
 
-  position: fixed;
+  padding: 10px;
+  margin-top: 20px;
+  height: 80vh;
+  border-radius: 20px;
+  background: var(--mainLinearGradient);
+}
+.windowBox {
+  width: 100%;
+}
+/* modal */
+.title {
+  text-align: center;
+  margin: 5px 0;
+}
+.text {
+  text-align: center;
+  margin: 5px 0;
+}
+.inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.input {
+  height: 25px;
+  width: calc(100% - 10px);
+  margin: 0;
+  border: 1px solid gray;
+  border-radius: 10px;
 
-  margin: 0, 20px;
+  background-color: inherit;
+  color: white;
+}
+.hideButton {
+  display: block;
 
-  top: 10%;
-  height: 85%;
+  margin-top: 10px;
+  margin: 10px auto 5px;
+  width: 100px;
+  height: 25px;
+  border-radius: 10px;
 
-  background-color: grey;
+  border: 1px solid gray;
+
+  background-color: inherit;
 }

@@ -3,6 +3,7 @@
   padding-left: 5px;
   padding-right: 5px;
 
-  background: var(--mainLinearGradient);
+  /* background: var(--mainLinearGradient); */
+  background-color: black;
   color: var(--textMainColor);
 }

@@ -12,7 +12,7 @@
   padding-left: 30px;
   margin: 10px 0;
 
-  border: 1px solid rgba(83, 82, 82, 0.597);
+  border: 1px solid rgba(83, 82, 82);
   border-radius: 20px;
 
   background-color: inherit;
@@ -33,9 +33,10 @@
 .input::placeholder {
   text-align: center;
   padding-left: 0;
+  font-size: 20px;
 }
 .submitBox > button:disabled {
-  background-color: gray;
+  background-color: rgba(83, 82, 82);
   pointer-events: none;
 }
 
@@ -44,7 +45,7 @@
   padding: 15px;
 
   border-radius: 20px;
-  border: 1px solid red;
+  border: 1px solid white;
   background-color: inherit;
   color: white;
 }

@@ -1,7 +1,7 @@
-import React from "react";
 import css from "./Faq.module.css";
 import TitleComponent from "../../dumbComponents/titleComponent/TitleComponent";
 import FaqComponent from "../../smartComponents/faqComponent/FaqComponent";
+import Accordion from "../../dumbComponents/accordion/Accordion";
 const faqQuestion = [
   {
     question: "Чи потрібно підписувати контракт перед роботою?",
@@ -35,7 +35,8 @@ function Faq() {
     <section className={css.faqSection}>
       <TitleComponent text={"FAQ"} />
       {faqQuestion.map((item, index) => (
-        <FaqComponent key={index} faqEl={item} />
+        // <FaqComponent key={index} faqEl={item} />
+        <Accordion key={index} text={item.answer} title={item.question} />
       ))}
     </section>
   );

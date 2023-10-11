@@ -33,7 +33,7 @@ function SocialBlock() {
             <SocialItem
               icon={<BsTiktok size={30} />}
               title="TikTok"
-              color="#002244"
+              color="white"
             />
           </a>
         </li>

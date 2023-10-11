@@ -30,7 +30,7 @@
   padding: 5px;
 
   border-radius: 50%;
-  background-color: red;
+  background-color: white;
   animation: var(--scaleAniimation);
 }
 .icon > svg {
@@ -42,7 +42,7 @@
   padding: 5px;
 
   border-radius: 20px;
-  border: 1px solid red;
+  border: 1px solid white;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 3px 5px 14px #ffffff;
   cursor: pointer;
