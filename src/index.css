@@ -71,7 +71,8 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: cursive;
+  /* font-family: cursive; */
+  font-family: "AR One Sans", sans-serif;
   /* overflow: hidden; */
 }
 /*  */

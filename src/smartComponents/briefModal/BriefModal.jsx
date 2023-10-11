@@ -45,6 +45,10 @@ function BriefModal({ closeWindow, setMessage }) {
     await setMessage(message);
 
     closeWindow((old) => !old);
+
+    document.querySelector("#connect").scrollIntoView();
+    // console.log(connect);
+    // scrollTo(connect);
     event.target.reset();
   };
   return (
@@ -92,8 +96,9 @@ function BriefModal({ closeWindow, setMessage }) {
                 className={css.input}
               />
             </div>
+
             <button type="submit" className={css.hideButton}>
-              Відправити
+              Продовжити заповнювати форму
             </button>
           </form>
         </div>

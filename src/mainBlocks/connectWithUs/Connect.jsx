@@ -10,7 +10,7 @@ function Connect({ briefMessage, setMessage }) {
   const [typeConnect, setTypeConnect] = useState("number");
   return (
     <Element name="connectContainer">
-      <div className={css.connectContainer}>
+      <div className={css.connectContainer} id="connect">
         <TitleComponent
           text={`Залиште заявку, та з вами обов'язково зв'яжуться`}
         />

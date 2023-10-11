@@ -57,7 +57,7 @@
 
   padding: 10px;
   margin-top: 20px;
-  height: 80vh;
+  height: 90vh;
   border-radius: 20px;
   background: var(--mainLinearGradient);
 }
@@ -94,10 +94,11 @@
   margin-top: 10px;
   margin: 10px auto 5px;
   width: 100px;
-  height: 25px;
+  height: max-content;
   border-radius: 10px;
 
   border: 1px solid gray;
+  color: white;
 
   background-color: inherit;
 }
